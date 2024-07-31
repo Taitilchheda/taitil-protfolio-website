@@ -22,7 +22,10 @@ import {
     carrent,
     jobit,
     tripguide,
-    threejs  } from "../assets";
+    threejs,
+    python,
+    tensorflow,
+    } from "../assets";
   
   export const navLinks = [
     {
@@ -79,6 +82,10 @@ import {
     {
       name: "TypeScript",
       icon: typescript,
+    },
+    {
+      name: "Python",
+      icon: python,
     },
     {
       name: "React JS",
