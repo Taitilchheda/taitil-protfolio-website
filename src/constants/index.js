@@ -25,6 +25,7 @@ import {
     threejs,
     python,
     tensorflow,
+    pytorch,
     } from "../assets";
   
   export const navLinks = [
@@ -68,6 +69,30 @@ import {
   
   const technologies = [
     {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "Tensorflow",
+      icon: tensorflow,
+    },
+    {
+      name: "pytorch",
+      icon: pytorch,
+    },
+    {
+      name: "keras",
+      icon: keras,
+    },
+    {
+      name: "numpy",
+      icon: nupmy,
+    },
+    {
+      name: "pandas",
+      icon: pandas,
+    },
+    {
       name: "HTML 5",
       icon: html,
     },
@@ -78,50 +103,6 @@ import {
     {
       name: "JavaScript",
       icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "Python",
-      icon: python,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
     },
   ];
   
