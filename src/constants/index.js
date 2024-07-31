@@ -22,9 +22,7 @@ import {
     carrent,
     jobit,
     tripguide,
-    threejs,
-    python
-  } from "../assets";
+    threejs  } from "../assets";
   
   export const navLinks = [
     {
