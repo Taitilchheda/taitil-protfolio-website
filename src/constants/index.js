@@ -23,6 +23,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    python
   } from "../assets";
   
   export const navLinks = [
@@ -31,9 +32,14 @@ import {
       title: "About",
     },
     {
-      id: "work",
+      id: "Experience",
       title: "Work",
     },
+    {
+      id: "Projects",
+      title: "Projects",
+    },
+    
     {
       id: "contact",
       title: "Contact",
@@ -42,11 +48,11 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "AI & ML Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Web Developer",
       icon: mobile,
     },
     {
@@ -116,15 +122,15 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "AI & ML Intern",
+      company_name: "Eccomix",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "April 2024 - July 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Used PyMuPDF to scan and extract the pages of pdf to image for further image processing.",
+        " Compared multiple different OPEN SOURCE LLMs and found one that balances speed/CPU utilization",
+        "Improved the previous prompts and made the RAG model robust",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
