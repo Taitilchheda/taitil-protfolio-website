@@ -35,6 +35,9 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
+import eccomix from "./company/eccomix.png";
+import robokart from "./company/robokart.png";
+import taitilgraphics from "./company/taitilgraphics.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
@@ -88,5 +91,9 @@ export {
   emotion,
   query,
   stock,
+  eccomix,
+  robokart,
+  taitilgraphics,
+  
 
 };

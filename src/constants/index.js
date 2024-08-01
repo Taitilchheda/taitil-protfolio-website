@@ -36,6 +36,9 @@ import {
   opencv,
   scipy,
   matplotlib,
+  eccomix,
+  robokart,
+  taitilgraphics,
   
 } from "../assets";
 
@@ -134,11 +137,24 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "AI & ML Developer",
+    company_name: "Eccomix",
+    icon: eccomix,
+    iconBg: "#DEDEDE",
+    date: "April 2024 - Present",
+    points: [
+      "Used PyMuPDF to scan and extract the pages of pdf to image for further image processing.",
+      "Compared multiple different OPEN SOURCE LLMs and found one that balances speed/CPU utilization.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Robotics Trainer",
+    company_name: "Robokart",
+    icon: robokart,
+    iconBg: "#DEDEDE",
+    date: "June 2024 - August 2024",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -147,23 +163,10 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
+    title: "Web Developer / Graphics designer",
+    company_name: "Taitil Graphics",
+    icon: taitilgraphics,
+    iconBg: "#DEDEDE",
     date: "Jan 2022 - Jan 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
@@ -172,7 +175,7 @@ const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
-  {
+  /*{
     title: "Full stack Developer",
     company_name: "Meta",
     icon: meta,
@@ -184,7 +187,7 @@ const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
-  },
+  },*/
 ];
 
 const testimonials = [
