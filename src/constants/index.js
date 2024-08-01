@@ -190,26 +190,26 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      "Taitil Chheda’s expertise in machine learning is impressive. His innovative solutions and dedication have consistently driven excellent results. A true asset to any team!",
+    name: "Abhay Mathur",
+    designation: "CTO",
+    company: "Eccomix",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "Working with Taitil has been a pleasure. His deep understanding of ML and his creative problem-solving skills have significantly enhanced our projects.",
+    name: "Bhavesh Chheda",
+    designation: "CEO",
+    company: "Taitil Graphics",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      "Taitil is a skilled ML developer whose work has greatly benefited our projects. His technical proficiency and dedication are truly commendable.",
+    name: "Pranav",
+    designation: "Operations Head",
+    company: "Robokart",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
