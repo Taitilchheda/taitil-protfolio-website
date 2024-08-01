@@ -21,7 +21,7 @@ const Ball = (props) => {
       <mesh castShadow receiveShadow scale={2.75}>
         <sphereGeometry args={[1, 64,64]} />
         <meshStandardMaterial
-          color='#c296ff'
+          color='#bf61ff'
           polygonOffset
           polygonOffsetFactor={-2}
           flatShading
