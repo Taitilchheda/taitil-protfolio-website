@@ -19,6 +19,7 @@ import {
   starbucks,
   tesla,
   shopify,
+  emotion,
   carrent,
   jobit,
   tripguide,
@@ -213,25 +214,25 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Emotion Recognition",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "This project is aimed at developing an emotion recognition system using machine learning techniques. The model is trained to recognize emotions such as happiness, sadness, anger, surprise, fear, and disgust.Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
-        name: "react",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Tensorflow",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "OpenCV",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Taitilchheda/Emotion-Recognition/",
   },
   {
     name: "Job IT",
