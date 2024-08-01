@@ -16,14 +16,14 @@ const Ball = (props) => {
 
   return (
     <Float speed={0.55} rotationIntensity={1} floatIntensity={2}>
-      <ambientLight intensity={0.35} />
+      <ambientLight intensity={0.55} />
       <directionalLight position={[0, 5, 2]} />
       <mesh castShadow receiveShadow scale={2.75}>
         <sphereGeometry args={[1, 64,64]} />
         <meshStandardMaterial
-          color='#fff8eb'
+          color='#c296ff'
           polygonOffset
-          polygonOffsetFactor={-5}
+          polygonOffsetFactor={-2}
           flatShading
         />
         <Decal

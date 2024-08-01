@@ -33,8 +33,7 @@ import {
   opencv,
   scipy,
   matplotlib,
-
-
+  
 } from "../assets";
 
 export const navLinks = [
