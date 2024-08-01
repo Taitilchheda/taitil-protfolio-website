@@ -39,8 +39,10 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./emotion recognition.png";
-
+import carrent from "./carrent.png";
+import emotion from "./emotion.jpg";
+import query from "./query.png";
+import stock from "./stockmarket.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -83,5 +85,8 @@ export {
   opencv,
   scipy,
   matplotlib,
+  emotion,
+  query,
+  stock,
 
 };

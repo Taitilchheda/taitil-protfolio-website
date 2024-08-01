@@ -20,6 +20,8 @@ import {
   tesla,
   shopify,
   emotion,
+  query,
+  stock,
   carrent,
   jobit,
   tripguide,
@@ -216,7 +218,7 @@ const projects = [
   {
     name: "Emotion Recognition",
     description:
-      "This project is aimed at developing an emotion recognition system using machine learning techniques. The model is trained to recognize emotions such as happiness, sadness, anger, surprise, fear, and disgust.Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "This project aims to develop a sophisticated emotion recognition system using advanced machine learning techniques. The primary objective is to create a model capable of accurately identifying human emotions from facial expressions. By training on a diverse dataset, the system can recognize a wide range of emotions, including happiness, sadness, anger, surprise, fear, and disgust.",
     tags: [
       {
         name: "Python",
@@ -231,50 +233,50 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: emotion,
     source_code_link: "https://github.com/Taitilchheda/Emotion-Recognition/",
   },
   {
-    name: "Job IT",
+    name: "Query Genius",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "QueryGenius is an advanced Natural Language Processing (NLP) question-answering (Q&A) assistant designed to provide accurate responses to user queries. Leveraging state-of-the-art language models and efficient query processing techniques, QueryGenius offers a seamless and intuitive user experience for accessing information.",
     tags: [
       {
-        name: "react",
+        name: "Hugging Face",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "PyTorch",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Transformers",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: query,
+    source_code_link: "https://github.com/Taitilchheda/QueryGenius",
   },
   {
-    name: "Trip Guide",
+    name: "Stock Market Prediction",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "This project aims to predict stock prices using machine learning techniques. It utilizes historical stock data to train a predictive model and forecast future prices.This project leverages Python and popular libraries like pandas, scikit-learn, and matplotlib to fetch historical stock data, preprocess it, build a machine learning model, evaluate its performance, and visualize the results.",
     tags: [
       {
-        name: "nextjs",
+        name: "pandas",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: " scikit-learn",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "matplotlib",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: stock,
+    source_code_link: "https://github.com/Taitilchheda/Stock-Market-Prediction",
   },
 ];
 
