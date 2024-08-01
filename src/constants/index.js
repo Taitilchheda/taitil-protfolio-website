@@ -23,6 +23,18 @@ import {
   jobit,
   tripguide,
   threejs,
+  python,
+  tensorflow,
+  pytorch,
+  keras,
+  numpy,
+  pandas,
+  scikit,
+  opencv,
+  scipy,
+  matplotlib,
+
+
 } from "../assets";
 
 export const navLinks = [
@@ -65,6 +77,46 @@ const services = [
 
 const technologies = [
   {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Tensorflow",
+    icon: tensorflow,
+  },
+  {
+    name: "Pytorch",
+    icon: pytorch,
+  },
+  {
+    name: "keras",
+    icon: keras,
+  },
+  {
+    name: "numpy",
+    icon: numpy,
+  },
+  {
+    name: "pandas",
+    icon: pandas,
+  },
+  {
+    name: "scikit",
+    icon: scikit,
+  },
+  {
+    name: "opencv",
+    icon: opencv,
+  },
+  {
+    name: "scipy",
+    icon: scipy,
+  },
+  {
+    name: "matplotlib",
+    icon: matplotlib,
+  },
+  {
     name: "HTML 5",
     icon: html,
   },
@@ -73,48 +125,8 @@ const technologies = [
     icon: css,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
     name: "Node JS",
     icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
