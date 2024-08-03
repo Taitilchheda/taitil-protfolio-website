@@ -1,58 +1,40 @@
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import {
-  Decal,
-  Float,
-  OrbitControls,
-  Preload,
-  useTexture,
-} from "@react-three/drei";
+import React, { useEffect, useRef, useState } from "react";
+import "./IconCircle.css"; // Import the CSS file for styling
 
-import CanvasLoader from "../Loader";
+const IconCircle = ({ icon }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const iconRef = useRef(null);
 
-const Ball = (props) => {
-  
-  const [decal] = useTexture([props.imgUrl]);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // Stop observing after the element becomes visible
+        }
+      },
+      { threshold: 0.1 } // Trigger when at least 10% of the element is visible
+    );
+
+    if (iconRef.current) {
+      observer.observe(iconRef.current);
+    }
+
+    return () => {
+      if (iconRef.current) {
+        observer.unobserve(iconRef.current);
+      }
+    };
+  }, []);
 
   return (
-    <Float speed={0.55} rotationIntensity={1} floatIntensity={2}>
-      <ambientLight intensity={0.55} />
-      <directionalLight position={[0, 5, 2]} />
-      <mesh castShadow receiveShadow scale={2.75}>
-        <sphereGeometry args={[1, 64,64]} />
-        <meshStandardMaterial
-          color='#bf61ff'
-          polygonOffset
-          polygonOffsetFactor={-2}
-          flatShading
-        />
-        <Decal
-          position={[0, 0, 1]}
-          rotation={[2 * Math.PI, 0, 6.25]}
-          scale={1}
-          map={decal}
-          flatShading
-        />
-      </mesh>
-    </Float>
-  );
-};
-
-const BallCanvas = ({ icon }) => {
-  return (
-    <Canvas
-      frameloop='demand'
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
+    <div
+      className={`icon-circle ${isVisible ? "animate" : ""}`}
+      ref={iconRef}
     >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} />
-        <Ball imgUrl={icon} />
-      </Suspense>
-
-      <Preload all />
-    </Canvas>
+      <img src={icon} alt="Icon" className="icon-image" />
+    </div>
   );
 };
 
-export default BallCanvas;
+export default IconCircle;
