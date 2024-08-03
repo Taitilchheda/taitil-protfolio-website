@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import myImage from '../assets/taitil.png'; // Adjust the path as needed
+import resume from '../assets/resume.pdf'; // Import your resume file here
 
 const Hero = () => {
   return (
@@ -47,6 +48,16 @@ const Hero = () => {
       </div>
 
       <ComputersCanvas />
+
+      {/* Download Resume Button */}
+      <a
+        href={resume}
+        download='Taitil_Chheda_Resume.pdf'
+        className='fixed top-5 right-5 bg-[#915EFF] text-white py-2 px-4 rounded-lg shadow-lg hover:bg-[#7a3bbf] transition-colors z-30'
+        style={{ zIndex: 1000 }} // Ensure it's above other content
+      >
+        Download Resume
+      </a>
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
