@@ -10,7 +10,6 @@ const IconCircle = ({ icon }) => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.disconnect(); // Stop observing after the element becomes visible
         }
       },
       { threshold: 0.1 } // Trigger when at least 10% of the element is visible
