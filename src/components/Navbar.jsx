@@ -41,7 +41,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='Taitil Chheda logo' className='w-9 h-9 object-contain' />
+          <img src={logo} alt='Taitil Chheda logo' className='w-10 h-10 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>
             Taitil Chheda &nbsp;
             <span className='sm:block hidden'> | AI & ML</span>

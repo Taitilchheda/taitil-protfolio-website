@@ -48,16 +48,7 @@ const Hero = () => {
       </div>
 
       <ComputersCanvas />
-
-      {/* Download Resume Button */}
-      <a
-        href={resume}
-        download='Taitil_Chheda_Resume.pdf'
-        className='absolute top-5 right-5 bg-blue-500 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-blue-600 transition-colors'
-      >
-        Download Resume
-      </a>
-
+      
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
