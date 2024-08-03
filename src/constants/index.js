@@ -163,16 +163,16 @@ const experiences = [
     ],
   },
   {
-    title: "Web Developer / Graphics designer",
+    title: "Graphics designer / Creative Head",
     company_name: "Taitil Graphics",
     icon: taitilgraphics,
     iconBg: "#DEDEDE",
-    date: "Jan 2022 - Jan 2023",
+    date: "Jan 2018 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Proficient in Adobe Creative Suite (Photoshop, Illustrator, InDesign) and other design tools.",
+      "Utilized Autodesk Maya, 3ds Max, and Blender to create high-quality 3D models, animations, and visual effects.",
+      "Developed branding materials including logos, brochures, and business cards.",
+      "Created visually appealing graphics and layouts for websites, social media, and print materials.",
     ],
   },
   /*{
