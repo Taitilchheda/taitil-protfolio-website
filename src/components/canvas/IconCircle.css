@@ -1,35 +1,35 @@
 .icon-circle {
-    width: 110px; /* Adjust the size as needed */
-    height: 110px; /* Adjust the size as needed */
-    border-radius: 100%; /* Makes the container circular */
-    border: 4px solid #915EFF; /* Border color and thickness */
+    width: 110px; 
+    height: 110px; 
+    border-radius: 100%;
+    border: 4px solid #915EFF;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Hides any overflow of the image */
-    background-color: whitesmoke; /* Makes the background transparent */
-    opacity: 0; /* Initially hide the icon */
-    transform: scale(0.2); /* Start with a smaller scale */
-    transition: opacity 0.5s ease-out, transform 0.6s ease-out; /* Smooth transition */
+    overflow: hidden; 
+    background-color: whitesmoke; 
+    opacity: 0; 
+    transform: scale(0.2); 
+    transition: opacity 0.5s ease-out, transform 0.6s ease-out;
   }
   
   .icon-circle.animate {
-    opacity: 1; /* Fully visible */
-    transform: scale(1); /* End at original size */
+    opacity: 1; 
+    transform: scale(1); 
   }
   
   @keyframes growAndReturn {
     0% {
-      opacity: 0; /* Start hidden */
-      transform: scale(0.2); /* Start with a smaller scale */
+      opacity: 0; 
+      transform: scale(0.2); 
     }
     50% {
-      opacity: 1; /* Fully visible */
-      transform: scale(1.25); /* Grow slightly larger than original size */
+      opacity: 1; 
+      transform: scale(1.25); 
     }
     100% {
-      opacity: 1; /* Fully visible */
-      transform: scale(1); /* End at original size */
+      opacity: 1; 
+      transform: scale(1); 
     }
   }
   

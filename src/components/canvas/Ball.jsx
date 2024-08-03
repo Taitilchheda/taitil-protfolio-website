@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./IconCircle.css"; // Import the CSS file for styling
+import "./IconCircle.css"; 
 
 const IconCircle = ({ icon }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -12,7 +12,7 @@ const IconCircle = ({ icon }) => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 } // Trigger when at least 10% of the element is visible
+      { threshold: 0.3 } 
     );
 
     if (iconRef.current) {

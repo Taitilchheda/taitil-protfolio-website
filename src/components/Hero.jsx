@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-import myImage from '../assets/taitil.png'; // Adjust the path as needed
-import resume from '../assets/resume.pdf'; // Import your resume file here
+import myImage from '../assets/taitil.png';
+import resume from '../assets/resume.pdf';
 
 const Hero = () => {
   return (
@@ -14,8 +14,7 @@ const Hero = () => {
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
-
-        <div className='flex items-center gap-4 md:gap-40 lg:gap-80'> {/* Responsive gap */}
+        <div className='flex items-center gap-4 md:gap-40 lg:gap-80'>
           <div>
             <h1 className={`${styles.heroHeadText} text-white`}>
               Hi, I'm <span className='text-[#915EFF]'>Taitil</span>
@@ -26,14 +25,14 @@ const Hero = () => {
             </p>
           </div>
           
-          {/* Responsive image with appear and scale animation */}
+          
           <div className='relative'>
             <motion.div
-              initial={{ opacity: 0, scale: 0.2 }} // Start with invisible and smaller scale
-              animate={{ opacity: 1, scale: [0.2, 1.25, 1] }} // Animate to full opacity and scale
+              initial={{ opacity: 0, scale: 0.2 }} 
+              animate={{ opacity: 1, scale: [0.2, 1.25, 1] }} 
               transition={{ 
-                duration: 1.1,             // Duration of the animation
-                ease: "easeOut"           // Smooth easing
+                duration: 1.1,
+                ease: "easeOut"
               }}
               className='w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-40 lg:h-40 rounded-full overflow-hidden border-4 border-[#915EFF]'
             >
