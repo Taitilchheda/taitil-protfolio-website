@@ -53,8 +53,7 @@ const Hero = () => {
       <a
         href={resume}
         download='Taitil_Chheda_Resume.pdf'
-        className='fixed top-5 right-5 bg-[#915EFF] text-white py-2 px-4 rounded-lg shadow-lg hover:bg-[#7a3bbf] transition-colors z-30'
-        style={{ zIndex: 1000 }} // Ensure it's above other content
+        className='absolute top-5 right-5 bg-blue-500 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-blue-600 transition-colors'
       >
         Download Resume
       </a>
