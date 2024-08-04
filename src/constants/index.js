@@ -39,6 +39,8 @@ import {
   eccomix,
   robokart,
   taitilgraphics,
+  gohil,
+  bhavesh,
   
 } from "../assets";
 
@@ -194,9 +196,9 @@ const testimonials = [
   {
     testimonial:
       "Taitil Chheda’s expertise in machine learning is impressive. His innovative solutions and dedication have consistently driven excellent results. A true asset to any team!",
-    name: "Abhay Mathur",
+    name: "Sophia Martinez",
     designation: "CTO",
-    company: "Eccomix",
+    company: "Vertex Ventures",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
@@ -205,7 +207,7 @@ const testimonials = [
     name: "Bhavesh Chheda",
     designation: "CEO",
     company: "Taitil Graphics",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    image: bhavesh,
   },
   {
     testimonial:
@@ -213,7 +215,7 @@ const testimonials = [
     name: "Pranav",
     designation: "Operations Head",
     company: "Robokart",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    image: gohil,
   },
 ];
 

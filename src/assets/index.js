@@ -48,6 +48,8 @@ import query from "./query.png";
 import stock from "./stockmarket.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import gohil from "./gohil.jpeg";
+import bhavesh from "./bha photo.jpg";
 
 export {
   logo,
@@ -94,5 +96,7 @@ export {
   eccomix,
   robokart,
   taitilgraphics,
+  gohil,
+  bhavesh,
 
 };
