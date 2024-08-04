@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-import resume from "../assets/resume.pdf"; // Import your resume file here
+import resume from "../assets/resume.pdf";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -64,9 +64,10 @@ const Navbar = () => {
           <a
             href={resume}
             download='Taitil_Chheda_Resume.pdf'
-            className='text-white text-[16px] font-medium cursor-pointer border-2 border-white py-2 px-4 rounded-lg hover:bg-white hover:text-primary transition'
+            className='relative text-white text-[16px] font-medium cursor-pointer border-2 border-white py-2 px-4 rounded-lg overflow-hidden transition-all duration-300 group'
           >
-            Download Resume
+            <span className="absolute inset-0 bg-white transition-transform duration-300 transform translate-x-full group-hover:translate-x-0 z-0"></span>
+            <span className="relative z-10 group-hover:text-purple-600 transition-colors duration-300">Download Resume</span>
           </a>
         </div>
 
