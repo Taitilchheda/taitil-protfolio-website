@@ -156,7 +156,7 @@ const experiences = [
     company_name: "Robokart",
     icon: robokart,
     iconBg: "#DEDEDE",
-    date: "June 2024 - August 2024",
+    date: "June 2024 - July 2024",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
