@@ -20,18 +20,25 @@ const Tech = () => {
         <motion.h2 variants={textVariant(0.3)} className={styles.sectionHeadText}>Tech Stack.</motion.h2>
       </motion.div>
 
-      <div className="mt-10 flex flex-wrap justify-center gap-10">
+      <div className='mt-10 flex flex-wrap justify-center gap-10'>
         {technologies.map((technology, index) => (
-          <motion.div
+          <div
+            className='relative w-28 h-28 p-1 rounded-full transition-all duration-300 transform hover:scale-110 hover:-translate-y-2 group'
             key={technology.name}
-            className="w-28 h-28"
-            variants={fadeIn("up", "spring", index * 0.1, 0.75)} // Apply staggered fadeIn animation to each tech item
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }} // Ensure the animation only plays once
           >
-            <BallCanvas icon={technology.icon} />
-          </motion.div>
+            <div className='absolute -inset-1 bg-purple-500/50 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-all duration-300'></div>
+            <div className='relative w-full h-full p-2 bg-[#1d1836] rounded-full'>
+              <motion.div
+                variants={fadeIn("up", "spring", index * 0.1, 0.75)}
+                initial='hidden'
+                whileInView='show'
+                viewport={{ once: true }}
+                className='w-full h-full'
+              >
+                <BallCanvas icon={technology.icon} />
+              </motion.div>
+            </div>
+          </div>
         ))}
       </div>
     </section>
