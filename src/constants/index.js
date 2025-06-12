@@ -147,7 +147,7 @@ const experiences = [
     company_name: "Eccomix",
     icon: eccomix,
     iconBg: "#DEDEDE",
-    date: "April 2024 - Present",
+    date: "April 2024 - July 2024",
     points: [
       "Used PyMuPDF to scan and extract the pages of pdf to image for further image processing.",
       "Compared multiple different OPEN SOURCE LLMs and found one that balances speed/CPU utilization.",
