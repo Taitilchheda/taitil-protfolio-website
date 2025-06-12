@@ -50,6 +50,11 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import gohil from "./gohil.jpeg";
 import bhavesh from "./bha photo.jpg";
+import artificial_intelligence from "./artificial-intelligence.png"
+import content_creator from "./content_creator.png"
+import web_development from "./web_development.png"
+import multimedia from "./multimedia.png"
+
 
 export {
   logo,
@@ -98,5 +103,8 @@ export {
   taitilgraphics,
   gohil,
   bhavesh,
-
+  artificial_intelligence,
+  content_creator,
+  web_development,
+  multimedia,
 };

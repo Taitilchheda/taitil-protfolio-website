@@ -41,6 +41,10 @@ import {
   taitilgraphics,
   gohil,
   bhavesh,
+  artificial_intelligence,
+  web_development,
+  content_creator,
+  multimedia,
   
 } from "../assets";
 
@@ -66,19 +70,19 @@ export const navLinks = [
 const services = [
   {
     title: "AI & ML Developer",
-    icon: web,
+    icon: artificial_intelligence,
   },
   {
     title: "Web Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
+    icon: web_development,
   },
   {
     title: "Content Creator",
-    icon: creator,
+    icon: content_creator,
+  },
+  {
+    title: "Multimedia Creator",
+    icon: multimedia,
   },
 ];
 
