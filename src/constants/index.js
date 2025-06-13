@@ -45,6 +45,7 @@ import {
   web_development,
   content_creator,
   multimedia,
+  sar_colorizer,
   
 } from "../assets";
 
@@ -292,12 +293,12 @@ const projects = [
   },
   {
     id: 4,
-    name: "AI Image Generator",
+    name: "SAR Image Colorizer",
     description:
-      "A cutting-edge AI image generation platform that creates unique and high-quality images from text descriptions. Using state-of-the-art deep learning models and advanced image processing techniques, this project enables users to generate custom artwork, design assets, and creative visuals through natural language prompts.",
+      "This project is aimed at developing a Generative Adversarial Network (GAN) based system for colorizing grayscale Synthetic Aperture Radar (SAR) images. The model utilizes deep learning techniques such as U-Net for the generator and PatchGAN for the discriminator to produce high-quality, realistic colorized SAR images. ",
     tags: [
       {
-        name: "Python",
+        name: "U-Net",
         color: "blue-text-gradient",
       },
       {
@@ -305,18 +306,18 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "PyTorch",
+        name: "GAN",
         color: "pink-text-gradient",
       },
     ],
-    image: emotion, // Using emotion as placeholder
-    source_code_link: "https://github.com/Taitilchheda/AI-Image-Generator",
+    image: sar_colorizer, // Using emotion as placeholder
+    source_code_link: "https://github.com/Taitilchheda/SAR-colorizer",
   },
   {
     id: 5,
-    name: "Neural Network Visualizer",
+    name: "Voice Guard",
     description:
-      "An interactive web application that visualizes neural network architectures and their training process in real-time. This tool helps developers and researchers understand deep learning models better by providing detailed visualizations of layer activations, weight distributions, and gradient flow during model training.",
+      "The Deepfake Audio Detection System is an AI-driven platform designed to accurately detect deepfake audio, verify voice authenticity, and safeguard recordings through encryption. It leverages advanced neural networks for deepfake detection, AES-256 encryption/decryption for secure audio handling, and blockchain technology for tamper-proof authenticity verification. The system also supports ethical synthetic audio generation, ensuring transparency and responsible use of AI-generated voices.",
     tags: [
       {
         name: "React",

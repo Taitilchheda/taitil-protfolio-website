@@ -17,7 +17,7 @@ const PrevArrow = (props) => {
   return (
     <button
       onClick={onClick}
-      className={`absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-tertiary p-2 rounded-full hover:bg-[#2a2a2a] transition-all duration-300 ${
+      className={`absolute -left-10 top-1/2 -translate-y-1/2 z-10 bg-tertiary p-2 rounded-full hover:bg-[#2a2a2a] transition-all duration-300 ${
         currentSlide === 0 ? 'opacity-0 pointer-events-none' : 'opacity-100'
       }`}
       style={{ transform: 'translateY(-50%)' }}
@@ -37,7 +37,7 @@ const NextArrow = (props) => {
   return (
     <button
       onClick={onClick}
-      className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-tertiary p-2 rounded-full hover:bg-[#2a2a2a] transition-all duration-300 ${
+      className={`absolute -right-10 top-1/2 -translate-y-1/2 z-10 bg-tertiary p-2 rounded-full hover:bg-[#2a2a2a] transition-all duration-300 ${
         isLastSlide ? 'opacity-0 pointer-events-none' : 'opacity-100'
       }`}
       style={{ transform: 'translateY(-50%)' }}
@@ -66,7 +66,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl w-[360px] h-[650px]'
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -112,7 +112,7 @@ const ProjectCard = ({
 const Works = () => {
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,

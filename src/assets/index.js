@@ -54,7 +54,7 @@ import artificial_intelligence from "./artificial-intelligence.png"
 import content_creator from "./content_creator.png"
 import web_development from "./web_development.png"
 import multimedia from "./multimedia.png"
-
+import sar_colorizer from "./sar_colorizer.jpg"
 
 export {
   logo,
@@ -107,4 +107,5 @@ export {
   content_creator,
   web_development,
   multimedia,
+  sar_colorizer,
 };
