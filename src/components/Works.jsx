@@ -1,16 +1,54 @@
 import React from "react";
 import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+
+// Custom arrow components
+const PrevArrow = (props) => {
+  const { onClick, currentSlide } = props;
+  return (
+    <button
+      onClick={onClick}
+      className={`absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-tertiary p-2 rounded-full hover:bg-[#2a2a2a] transition-all duration-300 ${
+        currentSlide === 0 ? 'opacity-0 pointer-events-none' : 'opacity-100'
+      }`}
+      style={{ transform: 'translateY(-50%)' }}
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+  );
+};
+
+const NextArrow = (props) => {
+  const { onClick, currentSlide, slideCount, slidesToShow } = props;
+  // Calculate if we're at the last possible slide
+  const isLastSlide = currentSlide + slidesToShow >= slideCount;
+  
+  return (
+    <button
+      onClick={onClick}
+      className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-tertiary p-2 rounded-full hover:bg-[#2a2a2a] transition-all duration-300 ${
+        isLastSlide ? 'opacity-0 pointer-events-none' : 'opacity-100'
+      }`}
+      style={{ transform: 'translateY(-50%)' }}
+      disabled={isLastSlide}
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
+  );
+};
 
 const ProjectCard = ({
   index,
@@ -21,7 +59,7 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="px-3">
       <Tilt
         options={{
           max: 4,
@@ -72,6 +110,33 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -92,10 +157,12 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+      <div className='mt-20 relative'>
+        <Slider {...settings}>
+          {projects.map((project, index) => (
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          ))}
+        </Slider>
       </div>
     </>
   );

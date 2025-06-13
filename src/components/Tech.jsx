@@ -34,9 +34,9 @@ const Tech = () => {
                 whileInView='show'
                 viewport={{ once: true }}
                 className='w-full h-full'
-              >
-                <BallCanvas icon={technology.icon} />
-              </motion.div>
+          >
+            <BallCanvas icon={technology.icon} />
+          </motion.div>
             </div>
           </div>
         ))}

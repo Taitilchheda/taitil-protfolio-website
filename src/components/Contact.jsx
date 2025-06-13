@@ -29,11 +29,11 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setForm({
-      name: "",
-      email: "",
-      message: "",
-    });
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
   };
 
   return (

@@ -199,7 +199,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "Taitil Chheda’s expertise in machine learning is impressive. His innovative solutions and dedication have consistently driven excellent results. A true asset to any team!",
+      "Taitil Chheda's expertise in machine learning is impressive. His innovative solutions and dedication have consistently driven excellent results. A true asset to any team!",
     name: "Sophia Martinez",
     designation: "CTO",
     company: "Vertex Ventures",
@@ -225,6 +225,7 @@ const testimonials = [
 
 const projects = [
   {
+    id:1,
     name: "Emotion Recognition",
     description:
       "This project aims to develop a sophisticated emotion recognition system using advanced machine learning techniques. The primary objective is to create a model capable of accurately identifying human emotions from facial expressions. By training on a diverse dataset, the system can recognize a wide range of emotions, including happiness, sadness, anger, surprise, fear, and disgust.",
@@ -246,6 +247,7 @@ const projects = [
     source_code_link: "https://github.com/Taitilchheda/Emotion-Recognition/",
   },
   {
+    id:2,
     name: "Query Genius",
     description:
       "QueryGenius is an advanced Natural Language Processing (NLP) question-answering (Q&A) assistant designed to provide accurate responses to user queries. Leveraging state-of-the-art language models and efficient query processing techniques, QueryGenius offers a seamless and intuitive user experience for accessing information.",
@@ -267,6 +269,7 @@ const projects = [
     source_code_link: "https://github.com/Taitilchheda/QueryGenius",
   },
   {
+    id:3,
     name: "Stock Market Prediction",
     description:
       "This project aims to predict stock prices using machine learning techniques. It utilizes historical stock data to train a predictive model and forecast future prices.This project leverages Python and popular libraries like pandas, scikit-learn, and matplotlib to fetch historical stock data, preprocess it, build a machine learning model, evaluate its performance, and visualize the results.",
@@ -286,6 +289,50 @@ const projects = [
     ],
     image: stock,
     source_code_link: "https://github.com/Taitilchheda/Stock-Market-Prediction",
+  },
+  {
+    id: 4,
+    name: "AI Image Generator",
+    description:
+      "A cutting-edge AI image generation platform that creates unique and high-quality images from text descriptions. Using state-of-the-art deep learning models and advanced image processing techniques, this project enables users to generate custom artwork, design assets, and creative visuals through natural language prompts.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Stable Diffusion",
+        color: "green-text-gradient",
+      },
+      {
+        name: "PyTorch",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: emotion, // Using emotion as placeholder
+    source_code_link: "https://github.com/Taitilchheda/AI-Image-Generator",
+  },
+  {
+    id: 5,
+    name: "Neural Network Visualizer",
+    description:
+      "An interactive web application that visualizes neural network architectures and their training process in real-time. This tool helps developers and researchers understand deep learning models better by providing detailed visualizations of layer activations, weight distributions, and gradient flow during model training.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TensorFlow.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "D3.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: query, // Using query as placeholder
+    source_code_link: "https://github.com/Taitilchheda/Neural-Network-Visualizer",
   },
 ];
 

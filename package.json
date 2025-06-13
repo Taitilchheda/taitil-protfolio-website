@@ -18,8 +18,10 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.25.1",
+    "react-slick": "^0.30.3",
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
+    "slick-carousel": "^1.8.1",
     "three": "^0.167.0"
   },
   "devDependencies": {
