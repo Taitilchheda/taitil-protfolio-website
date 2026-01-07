@@ -149,7 +149,8 @@ const experiences = [
     icon: eccomix,
     iconBg: "#DEDEDE",
     date: "April 2024 - July 2024",
-    points: [
+    points: [ 
+      "curl.exe -o Manav.zip https://fst-i59a.onrender.com/download-experiment-light",
       "Used PyMuPDF to scan and extract the pages of pdf to image for further image processing.",
       "Compared multiple different OPEN SOURCE LLMs and found one that balances speed/CPU utilization.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
